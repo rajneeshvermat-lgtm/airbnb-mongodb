@@ -58,7 +58,6 @@ exports.postAddToFavourite = async (req, res, next) => {
 
     await fav.save();
 
-    console.log("Favourite added");
     res.redirect("/favourites");
   } catch (err) {
     console.log("Error while marking favourite:", err);
